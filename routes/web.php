@@ -20,3 +20,5 @@ Route::get('/live', 'NavbarController@live');
 Route::get('/shopping', 'NavbarController@shopping');
 Route::get('/sosmed', 'NavbarController@sosmed');
 Route::get('/info', 'NavbarController@info');
+Route::get('/shopping/barang', 'NavbarController@barang');
+

@@ -4,17 +4,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
-video {
-  width: 100%;
-  height: auto;
-}
 
-.image{
+.image-video{
   object-fit: contain;
-   max-width: 100%;
-   max-height: 100%;
-   width: auto;
-   height: auto;
+  width: auto;
+  height: 900px;
 }
 
 .center {
@@ -150,31 +144,7 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-</style>
-</head>
-<body>
 
-<h2>Toggle Switch</h2>
-
-<label class="switch">
-  <input type="checkbox">
-  <span class="slider"></span>
-</label>
-
-<label class="switch">
-  <input type="checkbox" checked>
-  <span class="slider"></span>
-</label><br><br>
-
-<label class="switch">
-  <input type="checkbox">
-  <span class="slider round"></span>
-</label>
-
-<label class="switch">
-  <input type="checkbox" checked>
-  <span class="slider round"></span>
-</label>
-
-</body>
-</html> 
+a:link{
+  color: white;
+}

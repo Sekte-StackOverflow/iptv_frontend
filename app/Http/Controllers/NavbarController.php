@@ -21,4 +21,8 @@ class NavbarController extends Controller
     public function info(){
 		return view('info');
 	}
+
+	public function barang(){
+		return view('barang');
+	}
 }

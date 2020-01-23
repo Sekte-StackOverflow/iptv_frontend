@@ -52,12 +52,16 @@
 
 article {
   position: relative;
+  background: rgba(224, 223, 218, 0.6);
+  border-radius: 10px;
 }
 
 .article-img {
   height: 100px;
   width: 100%;
   object-fit: cover;
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
 }
 
 .article-title {
@@ -79,16 +83,29 @@ article {
   height: 40px;
 }
 
+.live {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 7px;
+  color: white;
+  height: 25px;
+  font-weight:bold;
+  font-size: 11px;
+  border-radius: 10px 0px 10px 0px;
+  background-color: #ff6f00;
+}
 .watching{
   color: #5e6269;
   font-size: 10px;
   text-align: left;
+  padding: 5px; 
 }
 
 .carousel-inner img {
-      width: 100%; /* Set width to 100% */
-      min-height: 300px;
       max-height: 300px;
+      /*object-fit: cover;*/
+      height: 225px; width: 100%;
     }
 
     /* Hide the carousel text when the screen is less than 600 pixels wide */

@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
   <link rel="stylesheet" type="text/css" href="{{asset('css/sass.css')}}">
   <link rel="stylesheet" type="text/css" href="{{asset('css/live.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{asset('css/shopping.css')}}">
   
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -36,10 +37,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="{{ Request::is('live') ? 'active' : '' }}"><a href="live" class="nav-link fa fa-film ">Live Movie</a></li>
-        <li class="{{ Request::is('shopping') ? 'active' : '' }}"><a href="shopping" class="nav-link fa fa-shopping-cart">Shopping</a></li>
-        <li class="{{ Request::is('sosmed') ? 'active' : '' }}"><a href="sosmed" class="nav-link fa fa-comment">Sosial Media</a></li>
-        <li class="{{ Request::is('info') ? 'active' : '' }}"><a href="info" class="nav-link fa fa-info-circle">info</a></li>
+        <li class="{{ Request::is('live') ? 'active' : '' }}"><a href="/live" class="nav-link fa fa-film ">Live Movie</a></li>
+        <li class="{{ Request::is('shopping') ? 'active' : '' }}"><a href="/shopping" class="nav-link fa fa-shopping-cart">Shopping</a></li>
+        <li class="{{ Request::is('sosmed') ? 'active' : '' }}"><a href="/sosmed" class="nav-link fa fa-comment">Sosial Media</a></li>
+        <li class="{{ Request::is('info') ? 'active' : '' }}"><a href="/info" class="nav-link fa fa-info-circle">info</a></li>
       </ul>
       <!-- <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>

@@ -3,7 +3,7 @@
 
 
 @section('heading')
-  <img src="https://1.bp.blogspot.com/-RI22TMdzSJk/WgmxvNJMWAI/AAAAAAAAFwg/7DIp4G5wxR8BD0uEItY4UjF4oKB8QZZagCLcBGAs/s1600/Sosmed.jpg" class="image" alt="Image">
+  <img src="https://1.bp.blogspot.com/-RI22TMdzSJk/WgmxvNJMWAI/AAAAAAAAFwg/7DIp4G5wxR8BD0uEItY4UjF4oKB8QZZagCLcBGAs/s1600/Sosmed.jpg" class="img-rounded" style="width:100%" alt="Image">
 @endsection
 
 @section('konten')

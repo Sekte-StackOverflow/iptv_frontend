@@ -1,23 +1,19 @@
 @extends('master')
 
 @section('heading')
-<!--   <video id="example_video_1" class="video-js" controls preload="none" width="640" height="264" poster="http://vjs.zencdn.net/v/oceans.png" data-setup="{}">
-    <source src="http://serverproyek.000webhostapp.com/cobap3/Yakusoku%20no%20Neverland%2001%20480p%20%5b931B8263%5d.mkv" type="video/mp4">
-    <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
-  </video> -->
-
 <div class="video-responsive">
-<video id="videojs-hls-quality-selector-player" class="video-js vjs-default-skin" 
+  <div class="embed-responsive embed-responsive-16by9">
+    <video id="videojs-hls-quality-selector-player" class="video-js vjs-default-skin embed-responsive-item" 
     style="position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit:fill;
-    border:0" controls autoplay muted loop playsinline >
+    border:0" controls autoplay loop playsinline >
 
 <source type="application/x-mpegURL" src="https://bitdash-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8">
-</video>
+  </div>
 
 
 <script type="text/javascript" src="{{URL::asset('videojs/vjs/node_modules/video.js/dist/video.js')}}"></script>
@@ -33,7 +29,6 @@
   </script>
 
 </div>
-<img src="{{ URL::to('/image/16x9.jpg') }}" class="image"  alt="Image">
 @endsection
 
 @section('banner')
@@ -50,7 +45,7 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="{{ URL::to('/image/facebook.png') }}" alt="Image">
+          <img src="{{ URL::to('/image/16x9.jpg') }}" alt="Image">
           <div class="carousel-caption"><p>This text</p></div>      
         </div>
         <div class="item">
@@ -90,14 +85,15 @@
             Title of article
           </h4>
           <div class="watching">190 menonton</div>
-          <img src="{{ URL::to('/image/Live.png') }}" class="top-left">
+          <font class="live">LIVE</font>
         </article>
         <article>
-          <img class="article-img" src="http://placekitten.com/320/220" alt=" " />
+          <img class="article-img" src="{{ URL::to('/image/16x9.jpg') }}" alt=" " />
           <h4 class="article-title">
             Title of article
           </h4>
           <div class="watching">610 menonton</div>
+          <font class="live">LIVE</font>
         </article>
         <article>
           <img class="article-img" src="http://placekitten.com/330/240" alt=" " />
@@ -105,7 +101,7 @@
             Title of article
           </h4>
           <div class="watching">190 menonton</div>
-          <img src="{{ URL::to('/image/Live.png') }}" class="top-left">
+          <font class="live">LIVE</font>
         </article>
         <article>
           <img class="article-img" src="http://placekitten.com/280/250" alt=" " />
@@ -113,7 +109,7 @@
             Title of article
           </h4>
           <div class="watching">940 menonton</div>
-          <img src="{{ URL::to('/image/Live.png') }}" class="top-left">
+          <font class="live">LIVE</font>
         </article>
         <article>
           <img class="article-img" src="http://placekitten.com/310/210" alt=" " />
@@ -128,7 +124,7 @@
             Title of article
           </h4>
           <div class="watching">2071 menonton</div>
-          <img src="{{ URL::to('/image/Live.png') }}" class="top-left">
+          <font class="live">LIVE</font>
         </article>
       </section>
     </main>
