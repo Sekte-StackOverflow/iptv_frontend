@@ -19,11 +19,11 @@
   <link href="http://vjs.zencdn.net/7.0/video-js.min.css" rel="stylesheet">
   <script src="http://vjs.zencdn.net/7.0/video.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="{{asset('videojs/vjs/node_modules/video.js/dist/video-js.cs')}}">
+  <link rel="stylesheet" type="text/css" href="{{asset('videojs/vjs/node_modules/video.js/dist/video-js.css')}}">
   <link rel="stylesheet" type="text/css" href="{{asset('videojs/vjs/dist/videojs-hls-quality-selector.css')}}">
 
 </head>
-<body>
+<body style="background-color: #d6d6d6">
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
@@ -44,16 +44,14 @@
       </ul>
     </div>
   </div>
-</nav><br><br><br><br>
+</nav><br><br><br>
 
     <header>
-    <div class="overlay "></div>
     <div class="container h-100">
         <div class="d-flex h-100">
             <div class="w-100 text-black">
                 <div class="container">
-
-                  <div class="row">
+                  <div class="row" style="background-color: white; padding-top: 50px">
                     <div class="col-sm-1"></div>
                     <div class="col-sm-10">
 

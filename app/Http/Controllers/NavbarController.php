@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 class NavbarController extends Controller
 {
     public function live(){
-		return view('live');
+    	$total = 4;
+    	return view('live',['total' => $total]);
 	}
  
 	public function shopping(){

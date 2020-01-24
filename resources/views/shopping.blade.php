@@ -15,30 +15,12 @@
 @section('konten')
     <main>
       <section class="cards text-center">
+        @for ($i = 0 ; $i <= 20; $i++)
         <article>
           <img class="shop-img" src="http://placekitten.com/305/205" alt=" " />
           <a href="shopping/barang"><button type="button" class="shop-button">BELI</button></a>
         </article>
-        <article>
-          <img class="shop-img" src="http://placekitten.com/320/220" alt=" " />
-          <button type="button" class="shop-button">BELI</button>
-        </article>
-        <article>
-          <img class="shop-img" src="http://placekitten.com/330/240" alt=" " />
-          <button type="button" class="shop-button">BELI</button>
-        </article>
-        <article>
-          <img class="shop-img" src="http://placekitten.com/280/250" alt=" " />
-          <button type="button" class="shop-button">BELI</button>
-        </article>
-        <article>
-          <img class="shop-img" src="http://placekitten.com/310/210" alt=" " />
-          <button type="button" class="shop-button">BELI</button>
-        </article>
-        <article>
-          <img class="shop-img" src="http://placekitten.com/430/240" alt=" " />
-          <button type="button" class="shop-button">BELI</button>
-        </article>
+        @endfor
       </section>
     </main>
 @endsection

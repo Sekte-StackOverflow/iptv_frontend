@@ -12,7 +12,7 @@
     object-fit:fill;
     border:0" controls autoplay loop playsinline >
 
-<source type="application/x-mpegURL" src="https://bitdash-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8">
+<!-- <source type="application/x-mpegURL" src="https://bitdash-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8"> -->
   </div>
 
 
@@ -33,15 +33,11 @@
 
 @section('banner')
   <div class="row">
-
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
       <ol class="carousel-indicators">
-        @for ($i = 0 ; $i <= 4; $i++)
+        @for ($i = 0 ; $i <= $total ; $i++)
         <li data-target="#myCarousel" data-slide-to="0"></li>
         @endfor
-        <!-- <li data-target="#myCarousel" data-slide-to="1"></li> <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li> <li data-target="#myCarousel" data-slide-to="4"></li> -->
       </ol>
 
       <!-- Wrapper for slides -->
@@ -50,7 +46,7 @@
           <img src="{{ URL::to('/image/16x9.jpg') }}" alt="Image">
           <div class="carousel-caption"><p>This text</p></div>      
         </div>
-        @for ($i = 0 ; $i <= 4-1; $i++)
+        @for ($i = 0 ; $i <= $total-1; $i++)
         <div class="item">
           <img src="{{ URL::to('/image/instagram.png') }}" alt="Image">
           <div class="carousel-caption"><p>This text 2</p></div>      
@@ -85,46 +81,6 @@
           <font class="live">LIVE</font>
         </article>
         @endfor
-
-        <article>
-          <img class="article-img" src="{{ URL::to('/image/16x9.jpg') }}" alt=" " />
-          <h4 class="article-title">
-            Title of article
-          </h4>
-          <div class="watching">610 menonton</div>
-          <font class="live">LIVE</font>
-        </article>
-        <article>
-          <img class="article-img" src="http://placekitten.com/330/240" alt=" " />
-          <h4 class="article-title">
-            Title of article
-          </h4>
-          <div class="watching">190 menonton</div>
-          <font class="live">LIVE</font>
-        </article>
-        <article>
-          <img class="article-img" src="http://placekitten.com/280/250" alt=" " />
-          <h4 class="article-title">
-            Title of article
-          </h4>
-          <div class="watching">940 menonton</div>
-          <font class="live">LIVE</font>
-        </article>
-        <article>
-          <img class="article-img" src="http://placekitten.com/310/210" alt=" " />
-          <h4 class="article-title">
-            Title of article
-          </h4>
-          <div class="watching">10 menonton</div>
-        </article>
-        <article>
-          <img class="article-img" src="http://placekitten.com/430/240" alt=" " />
-          <h4 class="article-title">
-            Title of article
-          </h4>
-          <div class="watching">2071 menonton</div>
-          <font class="live">LIVE</font>
-        </article>
       </section>
     </main>
 @endsection
