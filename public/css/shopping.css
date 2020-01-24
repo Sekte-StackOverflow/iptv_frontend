@@ -132,3 +132,17 @@ input:checked + .slider:before {
   color: #ffffff;
   font-weight: bold;
 }
+
+/*barang img*/
+.barang-img {
+  height: 305px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+.barang-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 10px;
+}
