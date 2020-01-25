@@ -21,4 +21,4 @@ Route::get('/shopping', 'NavbarController@shopping');
 Route::get('/sosmed', 'NavbarController@sosmed');
 Route::get('/info', 'NavbarController@info');
 Route::get('/shopping/barang', 'NavbarController@barang');
-
+Route::get('/live/streaming/{id}','NavbarController@streaming');

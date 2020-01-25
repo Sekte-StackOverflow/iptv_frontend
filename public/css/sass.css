@@ -42,7 +42,7 @@ h2, a {
 }
 
 .social {
-  margin: 60px auto;
+  margin: 40px auto;
 }
 
 /* ============================ */
@@ -67,14 +67,14 @@ h2, a {
   -webkit-transition-timing-function: ease;
   -moz-transition-timing-function: ease;
   transition-timing-function: ease;
-  background-color: #c4c4c4;
+  background-color: white;
   text-align: center;
   display: inline-block;
-  width: 100px;
-  height: 70px;
+  width: auto;
+  height: 100%;
   padding: 10px 0px;
   color: white;
-  margin: 7px;
+  margin: 13px;
   /* Color each button differently */
 }
 .social-icon:nth-child(1) {
@@ -155,7 +155,7 @@ h2, a {
   background-color: #004eb2;
 }
 .social-icon img {
-  width: 50px;
+  width: 100px;
 }
 
 /* ============================ */

@@ -12,7 +12,9 @@
     object-fit:fill;
     border:0" controls autoplay loop playsinline >
 
-<source type="application/x-mpegURL" src="http://edge.metrotvnews.com:1935/live-edge/smil:metro.smil/playlist.m3u8">
+@foreach($stream as $p)
+<source type="application/x-mpegURL" src="{{$p->link}}">
+@endforeach
   </div>
 
 
@@ -32,22 +34,24 @@
 @endsection
 
 @section('banner')
-  <div class="row " style="padding: 15px">
-    <div id="myCarousel" class="carousel slide img-rounded" data-ride="carousel">
+<div class="row">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         @for ($i = 0 ; $i <= $total ; $i++)
-        <li data-target="#myCarousel" data-slide-to="$i"></li>
+        <li data-target="#myCarousel" data-slide-to="0"></li>
         @endfor
       </ol>
 
       <!-- Wrapper for slides -->
-      <div class="carousel-inner img-center" role="listbox" >
+      <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="{{ URL::to('/image/16x9.jpg') }}" alt="Image" class="banner"> 
+          <img src="{{ URL::to('/image/16x9.jpg') }}" alt="Image">
+          <!-- <div class="carousel-caption"><p>This text</p></div>       -->
         </div>
         @for ($i = 0 ; $i <= $total-1; $i++)
-        <div class="item" style="margin: 15px">
-          <img src="https://upload.wikimedia.org/wikipedia/id/8/84/SpiderManFarFromHomeTheatrical.jpg" alt="Image" class="banner">     
+        <div class="item">
+          <img src="{{ URL::to('/image/instagram.png') }}" alt="Image">
+          <!-- <div class="carousel-caption"><p>This text 2</p></div>       -->
         </div>
         @endfor
       </div>

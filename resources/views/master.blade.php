@@ -23,27 +23,34 @@
   <link rel="stylesheet" type="text/css" href="{{asset('videojs/vjs/dist/videojs-hls-quality-selector.css')}}">
 
 </head>
-<body style="background-color: #d6d6d6">
+<body style="background-color: #d6d6d6;  ">
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
+<nav class="navbar navbar-inverse navbar-fixed-top ">
+<div class="row">
+  <div class="col-sm-1"></div>
+  <div class="col-sm-10">
+  <div class="container-fluid" >
+    <div class="navbar-header" >
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="live">EyePlus</a>
+      <a class="navbar-brand" href="/live"><img src="{{ URL::to('/image/logo.png') }}" style="height: 150%; margin-left: 50%"></a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="{{ Request::is('live') ? 'active' : '' }}"><a href="/live" class="nav-link fa fa-film ">Live Movie</a></li>
-        <li class="{{ Request::is('shopping') ? 'active' : '' }}"><a href="/shopping" class="nav-link fa fa-shopping-cart">Shopping</a></li>
-        <li class="{{ Request::is('sosmed') ? 'active' : '' }}"><a href="/sosmed" class="nav-link fa fa-comment">Sosial Media</a></li>
-        <li class="{{ Request::is('info') ? 'active' : '' }}"><a href="/info" class="nav-link fa fa-info-circle">info</a></li>
+    <div class="collapse navbar-collapse " id="myNavbar" >
+      <ul class="nav navbar-nav navbar-right" >
+        <li class="{{ Request::is('live') ? 'active' : '' }}" style="margin-right: 60px;"><a href="/live" class="nav-link fa fa-television fa-2x text-center"><br><p class="sansserif">Live Movie</p> </a></li>
+        <li class="{{ Request::is('shopping') ? 'active' : '' }}" style="margin-right: 60px"><a href="/shopping" class="nav-link fa fa-shopping-cart fa-2x text-center"><br><p class="sansserif">Shopping</p> </a></li>
+        <li class="{{ Request::is('sosmed') ? 'active' : '' }}" style="margin-right: 60px"><a href="/sosmed" class="nav-link fa fa-comment fa-2x text-center"><br><p class="sansserif">Sosial Media</p> </a></li>
+        <li class="{{ Request::is('info') ? 'active' : '' }}" style="margin-right: 60px"><a href="/info" class="nav-link fa fa-info-circle fa-2x text-center"><br><p class="sansserif">Info</p> </a></li>
       </ul>
+
     </div>
   </div>
+</div>
+<div class="col-sm-1"></div>
+</div>
 </nav><br><br><br>
 
     <header>
@@ -51,16 +58,16 @@
         <div class="d-flex h-100">
             <div class="w-100 text-black">
                 <div class="container">
-                  <div class="row" style="background-color: white; padding-top: 50px">
+                  <div class="row" style="">
                     <div class="col-sm-1"></div>
-                    <div class="col-sm-10">
+                    <div class="col-sm-10" style="background-color: white; padding-top: 15px">
 
                       <div class="row">
-                        <div class="col-sm-8" >
+                        <div class="col-sm-9" >
                           @yield('heading')
                         </div>
-                        <div class="col-sm-1"></div>
-                        <div class="col-sm-3 border">
+                        <!-- <div class="col-sm-1"></div> -->
+                        <div class="col-sm-3">
                           <div class="gratis">GRATIS!</div>
                           <div class="keterangan"> Download aplikasi <b>eyePlus</b> di gadget Android anda</div>
                           <img class="barcode" src="https://ecs7.tokopedia.net/img/cache/700/product-1/2018/11/8/39617213/39617213_91fd0f0c-03c2-43b4-861a-64e9f04e8f24_700_700.jpeg"><br>
